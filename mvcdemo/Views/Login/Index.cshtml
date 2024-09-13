@@ -1,0 +1,12 @@
+@model mvcdemo.Contracts.LoginRequest;
+
+<h1>Login</h1>
+<form method="POST" asp-controller="Login" asp-action="Login">
+  <div>
+    <input type="text" placeholder="username" required asp-for="Username" />
+  </div>
+  <div>
+    <input type="password" placeholder="password" required asp-for="Password" />
+  </div>
+  <button>Submit</button>
+</form> 

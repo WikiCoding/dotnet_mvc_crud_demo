@@ -1,0 +1,15 @@
+@using mvcdemo.Contracts;
+@model LoginRequest
+
+<h1>Register</h1>
+<form method="POST" asp-controller="Register" asp-action="Create">
+  <div>
+    <input type="text" asp-for="Username" placeholder="Username" required />
+  </div>
+  <div>
+    <input type="password" asp-for="Password" placeholder="Password" required />
+  </div>
+  <div>
+    <button>Submit</button>
+  </div>
+</form>
